@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.brand {
+    width: 20%;
+}
+.menubar {
+    display: flex;
+    width: 20%;
+}
+.menu {
+    display: flex;
+    width: 60%;
+}
+.menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    list-style: none;
+}
+.avator img {
+    width: 40px;
+}
+.mobile_bar {
+    display: none;
+}
+
+@media (max-width: 780px) {
+    .mobile_bar {
+        display: flex;
+    }
+
+    .menu {
+        display: none;
+    }
+}
